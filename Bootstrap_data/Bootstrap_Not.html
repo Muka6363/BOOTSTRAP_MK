@@ -1,0 +1,201 @@
+<!-- 
+Bootstrap
+• Açık-kaynak kodlu, Front-End framework’üdür. 
+• İçerisinde hazır CSS ve Javascript kütüphaneleri bulunmaktadır. 
+• Özellikle Responsive Web tasarımı gerçekleştirmek için çok yaygın kullanılır. • Bir çok tarayıcı ile uyumlu olarak çalışmaktadır.
+https://getbootstrap.com/
+
+*****************************************************
+Bootstrap’i bir projeye 2 farklı şekilde eklemek mümkündür.
+NOT:▹ Şu anki kararlı sürüm 5.1.3’dür. Ancak sürekli geliştirme yapılmaktadır. ▹ İstenirse eski sürümleri kullanmak da mümkündür. ▹ Sürümler arası bazı değişiklikler olabilir.
+CDN 
+- CDN sunuculara referans vermek
+- Kendi web-sunucumuzun yükünü azaltmış oluruz. - Kullanımı çok daha pratiktir.
+Lokal
+- Bootstrap kaynak dosyalarını kendi projemizin içerisine yerleştirmek 
+- Bu durumda proje lokal olarak da çalışabilir. 
+- Ayrıca Bootstrap kaynak dosyalarında değişiklik yapmak mümkündür.
+
+*****************************************************
+
+Sayfamızın HEAD bölümüne Bootstrap CSS bağlantısı yapılır. 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous"
+/>
+
+JS bağlantısıise sayfanın altında BODY etiketi kapanmadan önce gerçekleştirilir.
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+
+Ayrıca Starter Template ile kolayca proje Bootstrap’e hazır hale getirilebilir.
+
+*****************************************************
+Typography
+▸ Bootstrap başlıklar, linkler ve bir çok yazı elemanını stillendirmek için hazır class’lar bulundurmaktadır. 
+
+class="hx" -> h elementleri dışındaki elementlere heading özelliği kazandırmak için kullanılır. h1-h6 arası değer alır. 
+
+class="display-x" -> h elementlerinden daha büyük bir başlık kullanmak gerekirse display class’ı kullanılabilir.
+NOT:h1 class’ının büyüklüğü display-6 ‘ya tekabül etmektedir.
+
+class="fs-x" -> Herhangi bir yazı elemanının boyutunu değiştirmek için 
+kullanılabilir. 1-6 arası değer alır. 
+
+****************************************************************
+Yazıları hizalamak için;
+class="text-start"                    -> Inline elemanları başa hizalar.
+class="text-end"                        ->Inline elemanları sona hizalar.
+class="text-center"                     ->Inline elemanları ortalar.
+
+*****************************************************************
+class="text-muted"              -> yazıyı soluklastırır.
+class="lead"                    -> yazıyı buyutur.
+class="fw-normal"               -> font-weight özelliği ile yazının kalınlıklarını değiştirir.bold, bolder, normal, light, (fst-italic) değerlerini alabilir.
+class="text-decoration-none"    none: Yazıların altındaki çizgiyi kaldırır.
+                                underline: altına çizgi ekler.
+                                line-through: üstüne çizgi ekler.
+class="lh-base"                 line-height satırlar arası boşluğu ayarlar.
+                                lh-1, lh-sm, lh-base, lh-lg gibi değerler alabilir.
+class= "blockquote"             Bir yazıyı alıntı gibi göstermek için girinti verir. NOT: blockquote-footer şeklinde bir                                class’ı daha bulunmaktadır.
+class="text-uppercase/LOWERCASE/CAPİTALİZE" YAZIYI BUYUK/KUCUK/HER KELIMENIN BAS HARFINI BUYUT
+
+*******************************************************************
+
+COLORS
+Yazı rengini değiştirmek için *text-renk* class’ı kullanır
+background rengi değiştirmek için *bg-renk* class’ı kullanılır
+border rengi değiştirmek için *border-renk* class’ı kullanır
+background rengine gradient vermek için *bg-renk bg-gradient* şablonu kullanır
+Link rengini değiştirmek için *link-renk* class’ı kullanır
+
+****9 adet renk secenegımız var****
+primary - secondary - success - danger - warning - info - light - dark - white
+
+*******************************************************************
+
+Margin ve Padding
+p: padding
+m: margin
+t: top
+b: bottom
+s: start
+e: end
+x: start & end
+y: top & bottom
+0-5: mesafe 
+auto: margin için
+m-3: dört kenardan 3-birim margin verir
+mt-1: üst taraftan 1-birim margin verir
+mx-auto: sol ve sağ marginleri auto yapar.
+pe-4: sağ taraftan 4-birim padding verir.
+py-0: üst ve alt margin’leri sıfırlar.
+
+*******************************************************************
+
+Width ve Height
+w-x : İstenilen blok elemana genişlik verilebilir. w-25, w-50, w-75 ve w-100 kullanılabilir. 
+h-x : İstenilen elemana yükseklik vermek için kullanılabilir.
+
+Borders
+border-top---border-end----border-bottom---border-start (saat yonunde)
+4 kenara border vermek için border class’ı kullanılır.
+istenilen yön için border-yön class’ı kullanılır
+rounded rounded-top rounded-end rounded-bottom
+rounded-start rounded-circle rounded-pill==================>(border radıus)
+Border-x (0-5) ile çerçeve kalınlığı, rounded- x (0-5) ile yuvarlaklık miktarı değiştirilir. 
+
+*******************************************************************
+
+Bootstrap Grid
+Bootstrapt display:flex yapısını kullanarak hazırlanmış 12 bölmelik bir ızgara yapısı oluşturmuştur.
+Responsive tasarımlar bu ızgara mantığına dayanmaktadır
+Col class’ı ile bir satıra sığdığı kadar bölme eklenebilir. Bölme genişlikleri birbirine eşit olur.
+<div class="container">
+<div class="row">
+<div class="col">1</div>
+<div class="col">2</div>
+<div class="col">3</div>
+...
+<div class="col">12</div>
+</div>
+</div>
+
+Container
+container 
+Sol ve sağ kenardan belli oranlarda boşluk bırakacak şekilde bir taşıyıcı oluşturur.
+container-fluid
+Soldan ve sağdan boşluk kalmayacak şekilde bir taşıyıcı oluşturur.
+
+GRİD
+col-x ifadesi ile oluşturulan hücrelerin ne kadar yer kaplayacağı belirlenebilir.
+col-auto ile hücre genişliği, hücredeki içeriğin boyutuna eşitlenir. 
+row class’ı satır oluşturmak için kullanılır.
+
+<div class="container">
+<div class="row">
+<div class="col-5">...</div>
+<div class="col-7">...</div>
+</div>
+</div>
+
+Grid Yatay-Hizalama
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-4">...</div>
+<div class="col-4">...</div>
+</div>
+</div>
+
+Breakpoints
+Breakpoint                      Class infix                     Dimensions
+X-Small                         none                            < 576px
+Small                           sm                              ≥ 576px
+Medium                          md                              ≥ 768px
+Large                           lg                              ≥ 992px
+Extra large                     xl                              ≥ 1200px
+Extra extra large               xxl                             ≥ 1400px
+
+************************************************************************************
+
+Display                 
+d-none                          Elementi gizler
+d-block                                 Element’i block hale getirir.
+d-inline                                        Element’i inline hale getiririr.
+d-inline-block                                          Element’i inline-block hale getirir.
+d-flex                                                          Elemente flex özelliğikazandırır.
+Elemente flex özelliği kazandırıldıktan sonra aşağıdaki özellikler kullnılabilir.
+Yatay hizalama için:==============>justify-content- [ start | end | center | between |around ]
+Dikey hizalamak için:===============>align-items-[ start | end |center ]
+
+************************************************************************************
+
+Position
+fixed-top                       Elementi üst tarafa sabitler
+fixed-bottom                            Elementi alt tarafa sabitler
+sticky-top                                      Elementi üst taraf için yapışkan hale getirir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->

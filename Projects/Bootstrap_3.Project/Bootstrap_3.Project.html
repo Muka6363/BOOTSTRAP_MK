@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Boostrap Project</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <!-- <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark"> -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/CLARUSWAY_LOGO.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">students</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/slider1.jpg" class="d-block w-100" alt="img1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Popular Education</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              reiciendis.
+            </p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider2.jpg" class="d-block w-100" alt="img2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sucessful Future</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider3.jpg" class="d-block w-100" alt="img3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dream Job</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ABOUT-US -->
+    <main class="text-center">
+      <section id="about" class="container bg-light p-3">
+        <h2 class="display-6 text-danger mb-4">ABOUT US</h2>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <h4>Online Courses</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <i class="fas fa-headset fa-2x"></i>
+            <h4>Fulltime Mentoring</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque? Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ipsa, quos.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h4>Learn Yourself</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTRUCTORS -->
+      <section id="instructors" class="container bg-dark p-3">
+        <h2 class="display-6 text-danger">INSTRUCTORS</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher1.jpg" class="card-img-top" alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title">Josh Ren</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher2.jpg" class="card-img-top" alt="t2" />
+              <div class="card-body">
+                <h5 class="card-title">Bob Ken</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher3.jpg" class="card-img-top" alt="t3" />
+              <div class="card-body">
+                <h5 class="card-title">Mary Elizabeth</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher4.jpg" class="card-img-top" alt="t4" />
+              <div class="card-body">
+                <h5 class="card-title">Johny Came</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher5.jpg" class="card-img-top" alt="t5" />
+              <div class="card-body">
+                <h5 class="card-title">Osho</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher6.jpg" class="card-img-top" alt="t6" />
+              <div class="card-body">
+                <h5 class="card-title">Ryu Ken</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDENTS -->
+      <section id="students" class="container bg-light p-3">
+        <h2 class="display-6 text-danger">OUR STUDENTS</h2>
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-sm-6 pt-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+              quis quos cum quaerat recusandae alias voluptate deserunt aperiam
+              delectus voluptates totam sequi molestias necessitatibus,
+              cupiditate labore laudantium mollitia ex quod maxime ut cumque
+              iure expedita?fuga.laudantium mollitia ex quod
+            </p>
+            <button
+              class="student_button bg-danger text-light border border-0 rounded-2 p-2"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="col-sm-6">
+            <img src="./img/students1.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSES -->
+      <section id="courses" class="container bg-dark p-3">
+        <h2 class="display-6 text-danger">COURSES</h2>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Full-Stack
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ds-images"
+              type="button"
+              role="tab"
+              aria-selected="true"
+            >
+              Data-Science
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dev-images"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              DevOps
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade active show"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/fs1.jpg">
+                  <img
+                    src="./img/thumbnail/fs1.jpg"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/fs2.jpg">
+                  <img
+                    src="./img/thumbnail/fs2.jpg"
+                    class="img-thumbnail"
+                    alt="fs2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/fs3.jpg">
+                  <img
+                    src="./img/thumbnail/fs3.jpg"
+                    class="img-thumbnail"
+                    alt="fs3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/fs4.jpg">
+                  <img
+                    src="./img/thumbnail/fs4.jpg"
+                    class="img-thumbnail"
+                    alt="fs4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="ds-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ds1.jpg">
+                  <img
+                    src="./img/thumbnail/ds1.jpg"
+                    class="img-thumbnail"
+                    alt="ds1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ds2.jpg">
+                  <img
+                    src="./img/thumbnail/ds2.jpg"
+                    class="img-thumbnail"
+                    alt="ds2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ds3.jpg">
+                  <img
+                    src="./img/thumbnail/ds3.jpg"
+                    class="img-thumbnail"
+                    alt="ds3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ds4.jpg">
+                  <img
+                    src="./img/thumbnail/ds4.jpg"
+                    class="img-thumbnail"
+                    alt="ds4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="dev-images"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ops1.jpg">
+                  <img
+                    src="./img/thumbnail/ops1.jpg"
+                    class="img-thumbnail"
+                    alt="ops1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ops2.jpg">
+                  <img
+                    src="./img/thumbnail/ops2.jpg"
+                    class="img-thumbnail"
+                    alt="ops2"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ops3.jpg">
+                  <img
+                    src="./img/thumbnail/ops3.jpg"
+                    class="img-thumbnail"
+                    alt="ops3"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox="" href="./img/thumbnail/ops4.jpg">
+                  <img
+                    src="./img/thumbnail/ops4.jpg"
+                    class="img-thumbnail"
+                    alt="ops4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="container bg-light p-3">
+        <div>
+          <h2 class="display-6 text-danger">CONTACT</h2>
+          <p class="fs-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed
+            rem a deleniti sunt quae odio asperiores placeat enim animi!
+          </p>
+          <div class="row d-flex">
+            <div class="col fs-6 fw-bold">
+              <div class="text-danger">
+                <i class="fa-solid fa-phone fa-2x"></i>
+              </div>
+              <div>Telephone</div>
+              <div><a href="">+63 6363 63 63</a></div>
+            </div>
+
+            <div class="col fs-6 fw-bold">
+              <div class="text-danger">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+              </div>
+
+              <div>Whatsapp</div>
+              <div><a href="">+63 6363 63 63</a></div>
+            </div>
+            <div class="col fs-6 fw-bold">
+              <div class="text-danger">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+              </div>
+              <div>Whatsapp</div>
+              <div><a href="">kebep@vatan_63.urfa</a></div>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="row d-flex mt-3">
+              <div class="col col-sm-6 g-2">
+                <input
+                  class="pe-5"
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="col col-sm-6 g-2">
+                <input
+                  type="email"
+                  name="mail"
+                  id=""
+                  placeholder="Enter mail"
+                />
+              </div>
+              <div class="ms-0">
+                <input type="text" name="" id="" placeholder="Enter Subject" />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  rows="3"
+                  cols="108"
+                  placeholder="Enter Your Comments"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  class="bg-danger text-white boder border-0 rounded-2 p-2"
+                >
+                  Submit
+                </button>
+              </div>
+              <div>
+                <iframe
+                  class="mt-4"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101740.59403716927!2d38.75578506464786!3d37.16711694036288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x153471ebdc619091%3A0x8e788516b709466c!2zU2FubGl1cmZhLCDFnmFubMSxdXJmYSwgVHVya2lldA!5e0!3m2!1ssv!2sse!4v1662721367104!5m2!1ssv!2sse"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer></footer>
+
+    <!-- UP-BTN -->
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
+  </body>
+</html>
+
+<!-- cdnjs ve fslightbox.com bakıp ındırmelerı yapalım. bootstrap sıtesını kulanalım 
+  31. style ıle yenıden renklendırme yaopacaksak classtakını sılmek zorundayız yoksa yemez.
+  *navbar-dark dersek yazıları beyaz olur.
+  *navbar expand-lg/md/sm ekrandakı en uts menunun acılıp kapanmasını *ayarlayabılırız.
+  *a href de şmg kullanarak navbar menunun en soluna clarusway ımg sını yerlestırıyoruz.
+  * butana renklerı vermek ıcın button clasına btn verdıkten sonra btn-renk /// btn-outline-renk ısmı ıle kullanabılırız.
+  projede butona ve dısblelınkı ve dropdown lısını sıldık ısımıze yaramayacakları dan dolayı
+  * forumu sıldık. 
+  *kendı li lerımızı ılave edelım.ul e ıcerısındekılerı degıstırdık ılave ettık.
+  * tıklandıgı yere gıtmesını ıstedıgımız #about ... #contact tıklandıgında asagıda maın de id=about olan 
+  * sagdan aotu verısıbde sol tarafa yaslar.
+  CSS dosyasına gectık
+  * navbar ıcınde yenı ozellıkler verbılırız.
+  *nav-link rengı black transıtıon 0.5s de gelmesını sagladık.
+  * nav-lınk:hover color: ıle rengını kırmızı yaptık. en yukarıda :root ıle ---red rengını ımport etmıstık. var ıle onu cekebılıyoruz.
+  *html...
+  * carousele kısmını booots.copyaladık
+  *carusol-item claslarındakı imglere fotoları eklıyoruz.
+  *d-none d-md-block oldugu ıcın baslangıcta gorunmez yazılar. md sevıyesıne cıkınca gorunmektedır.
+  * her bır paragrafın altına 2 tane btn buton koyuyoruz. bunun tum fotografların altına atıyoruz.
+  *css....
+  *carousel-item h5fotodakı baslıgını h5 ı kırmızı yaptık. var(--red), f-sıze sını buyuttuk.text-shadow ıle golge verdık.
+  *carousel-item p golge verdık bıraz buyuttuk.
+  *butonların boyutlarını esıtlemek lazım. carousel-item .btn clasından width ıle sabıt uzunluk verırsem her ıkısı esıt uzunlukta olacaktır.
+  *en alttakı butonları carousel-indicators clasından ayarlayabılırız.
+  * carousel-indicators button clasının rengını degısmek ıcın backgraund-color ını verecegız. ancak bootstrap rengı !important ıle verdıgı ıcın bız de degısmek ıstersek !important olarak vermemız gerekıyor. margın, widht ve heg,th ını de !important olarak degıstırıyoruz. busekılde tek tek esıyoruz.
+  * carousel - item clasındakı hegıht ı tespıt ıcın 100vh-88px ı cıkartacagız.bıylelece foto tam oturacak. ancak max-heıght vermemız gerekıyor. yanı en fazla 100vh-88px kadar buyuyecek daha da buyumesıne ızın vermeyecek. resımlere aslında yukseklık vermemeye calısın. verılınce kalıte dusuyor. ama max-hegıht verılebılır. sınırlandırmak ıcın kullanılıyor.
+  *ekran kuclunce yazılar resımden asagı ınıyor. d-none d-md-block dedıgımız zaman oncesınde yok md sevıyesıne gecınce ortaya cıkıyor. en alttakı 3lu button kuculunce alta ınmesını max-heıght 100vh-88px yaparak engelledık.
+  html
+  *main actık...ıcıne abouts section altına ınstractuars ...sectıonslar vardır. 
+  *about ıd sıne bır de contaıner verelım. sonra bg-lıght... verebılırız.
+  *onlıne courses fulltıme .... 
+  *ıconlu bu yerlerı row col olarak konumlandırdık justıyfyn contant center ıle text-center yatay dıkey hızadaladık. sm - md-lg ekranda faklı olsun dıye duzenledık 
+  * ınstractuarsburada bootstrapın card yaoısına bakıyoruz.
+  * text-center ı maıne verınce heosını ortaladı.
+  * row - col yapısını olusturuyoruz. card yapısınıu yapıstırıyoruz. sabıt widthi kaldırdık cunku bız kendımız otomatık sm -md-lg bu kadar col olsun vs dıyecegız sabıt genıslıgı kaldırıyoruz.
+  * sectıon ınstraokctron ıcındekı card-> transition.... transform
+
+  *
+  *
+  *
+  * 
+ -->
