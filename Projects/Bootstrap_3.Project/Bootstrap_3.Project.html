@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
 
-  <body>
+  <body id="body">
     <!-- NAVBAR -->
 
     <!-- <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark"> -->
@@ -349,6 +349,10 @@
       </section>
 
       <!-- COURSES -->
+      <!-- nav and tab kısmına gırıyor. bır tıkladıgında her seferınde aynı yerde farklı sayfa-lar cıkması. buttondakı data-bs-target-> boostrap ıle yazıldufı anlamaına gelmektedır. asagıdakılerle bu bılgılerın ıd sıyle aynı olması gerekıyor. col default olarak 12 de baslar. xs yanı... daha sonra sm-md-lg de nasıl gorunsun ıstıyorsak ona gore ayarlama yapıyoruz. imglerde alt="" kısmını da Seo acısından onemlı. class="img-thumbnail" bır de img-fluid var???? sayfanın yuklenme zamanı azaltmak bazında bu sekılde kucultulmus-optımıze edılmıs resım kullanmak onemlıdır. bu ufaklar konuluır. tıklanndıgında buyuyor. bu sebeple projelerde bı gercek buyuk rsım bırd ebızım kucultugumuz ufak resımler.  bunun ıcın fslightbox sıtesıne bak. nav-link.active css de ayarlıyoruz kırmısısını 
+      
+      
+      textarea da floatıng label. tasıyıcı dıve form-floatıng sonra asagıya-dısarıya bırr label for ve ıd aynı olacak. yazacagız.-->
       <section id="courses" class="container bg-dark p-3">
         <h2 class="display-6 text-danger">COURSES</h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -539,100 +543,114 @@
 
       <!-- CONTACT -->
       <section id="contact" class="container bg-light p-3">
-        <div>
-          <h2 class="display-6 text-danger">CONTACT</h2>
-          <p class="fs-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed
-            rem a deleniti sunt quae odio asperiores placeat enim animi!
+        <h2 class="display-6 text-danger">CONTACT</h2>
+
+        <article id="form">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, sit nulla numquam sunt esse aliquam? Quae, delectus!
+            Saepe, explicabo dolor!
           </p>
-          <div class="row d-flex">
-            <div class="col fs-6 fw-bold">
-              <div class="text-danger">
-                <i class="fa-solid fa-phone fa-2x"></i>
-              </div>
-              <div>Telephone</div>
-              <div><a href="">+63 6363 63 63</a></div>
-            </div>
 
-            <div class="col fs-6 fw-bold">
-              <div class="text-danger">
-                <i class="fa-brands fa-whatsapp fa-2x"></i>
-              </div>
-
-              <div>Whatsapp</div>
-              <div><a href="">+63 6363 63 63</a></div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <i class="fas fa-phone fa-2x text-danger"></i>
+              <h4>Telephone</h4>
+              <a href="tel:+90234556565">+90234556565</a>
             </div>
-            <div class="col fs-6 fw-bold">
-              <div class="text-danger">
-                <i class="fa-solid fa-envelope fa-2x"></i>
-              </div>
-              <div>Whatsapp</div>
-              <div><a href="">kebep@vatan_63.urfa</a></div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp fa-3x text-danger"></i>
+              <h4>Whatsapp</h4>
+              <a href="https://wa.me/+90234556565">+90234556565</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope fa-2x text-danger"></i>
+              <h4>email</h4>
+              <a href="mailto:info@clarusway.com">info@clarusway</a>
             </div>
           </div>
 
-          <form action="">
-            <div class="row d-flex mt-3">
-              <div class="col col-sm-6 g-2">
-                <input
-                  class="pe-5"
-                  type="text"
-                  name="name"
-                  id=""
-                  placeholder="Enter name"
-                />
-              </div>
-              <div class="col col-sm-6 g-2">
-                <input
-                  type="email"
-                  name="mail"
-                  id=""
-                  placeholder="Enter mail"
-                />
-              </div>
-              <div class="ms-0">
-                <input type="text" name="" id="" placeholder="Enter Subject" />
-              </div>
-              <div>
-                <textarea
-                  name=""
-                  id=""
-                  rows="3"
-                  cols="108"
-                  placeholder="Enter Your Comments"
-                ></textarea>
-              </div>
-              <div>
-                <button
-                  class="bg-danger text-white boder border-0 rounded-2 p-2"
-                >
-                  Submit
-                </button>
-              </div>
-              <div>
-                <iframe
-                  class="mt-4"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101740.59403716927!2d38.75578506464786!3d37.16711694036288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x153471ebdc619091%3A0x8e788516b709466c!2zU2FubGl1cmZhLCDFnmFubMSxdXJmYSwgVHVya2lldA!5e0!3m2!1ssv!2sse!4v1662721367104!5m2!1ssv!2sse"
-                  width="100%"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+          <form class="row g-3 mt-4">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="enter your email"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Enter your subject"
+              />
+            </div>
+
+            <div class="col-12 form-floating">
+              <textarea
+                type="text"
+                class="form-control"
+                id="comment"
+                placeholder="Enter your comments"
+              ></textarea>
+              <label for="comment">Comments</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger" style="width: 7rem">
+                Submit
+              </button>
             </div>
           </form>
-        </div>
+        </article>
+
+        <article id="location" class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192698.5521395148!2d28.871754336967353!3d41.005236293762124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1663183693965!5m2!1sen!2str"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
       </section>
     </main>
 
     <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+        <a href="#"> <i class="fab fa-youtube"></i></a>
+        <a href="#"> <i class="fab fa-linkedin"></i></a>
+        <a href="#"> <i class="fab fa-instagram"></i></a>
+      </article>
 
-    <footer></footer>
+      <article class="p-4 h6">
+        &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright by Clarusway
+      </article>
+    </footer>
 
     <!-- UP-BTN -->
-
+    <a class="btn-up" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- UP-BTN -->
+    <!-- posıtıon nu fıxed yapınca. altta uztte sag sol nerede olmasını ıstersek onu alt satırda yazmalıyız. w ve h ı aynı verırısek ve radıusu %50 yapınca tam yuvarlak olur. -->
     <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -687,10 +705,3 @@
   *
   * 
  -->
-<h1
-  class="header"
-  onmouseover="style.color='red'"
-  onmouseout="style.color='black'"
->
-  Dom temellerı
-</h1>
